@@ -1,6 +1,6 @@
+import sys
 
-
-def addittion(numb1, numb2):
+def add(numb1, numb2):
     add = numb1 + numb2
     return add
 
@@ -12,6 +12,10 @@ def mul(numb1, numb2):
     m = numb1 * numb2
     return m
 
-addittion(5, 6)
-sub()
-mul()
+numb1 = int(sys.argv[1])
+operation = sys.argv[2]
+numb2 = int(sys.argv[3])
+
+if operation == "add":
+    output = add(numb1, numb2)
+    print(output)
