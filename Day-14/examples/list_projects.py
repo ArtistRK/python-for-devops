@@ -6,9 +6,9 @@ import json
 
 url = "https://veeramallaabhishek.atlassian.net/rest/api/3/project"
 
-API_TOKEN=""
+API_TOKEN=""  #Jira Api Token Value
 
-auth = HTTPBasicAuth("", API_TOKEN)
+auth = HTTPBasicAuth("bensalmon922@gamilcom", API_TOKEN)
 
 headers = {
   "Accept": "application/json"
